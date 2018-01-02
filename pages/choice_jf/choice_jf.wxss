@@ -1,0 +1,85 @@
+/* pages/choice_wyjf/choice_wyjf.wxss */
+.mywait-list {
+	background: #fff;
+}
+.mywait-list view.li {
+	border-bottom: 1px solid #DDD;
+	height: 56px;
+	margin: 0 1rem;
+	padding-top: 10px;
+	font-size: 13px;
+}
+.mywait-list view.li:last-child{
+    border: none;
+}
+.mywait-list view.li icon{
+    margin-right: 0.5rem;
+    margin-top: 5px;
+    vertical-align: top;
+}
+.mywait-list .text-m {
+	display: inline-block;
+    font-size: 14px;
+}
+.mywait-list .text-m p {
+	margin: 0;
+    display: block;
+    line-height: 22px;
+}
+.mywait-list .text-r {
+	float: right;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+}
+.footer-content-1 {
+    display: flex;
+	flex-direction: row;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	height: 44px;
+	line-height: 44px;
+	color: #656565;
+	z-index: 1;
+	font-family: 微软雅黑;
+	border-top: 1px solid #f4f4f4;
+	font-size: 14px;
+}
+.footer-content-1 .check-box,
+.footer-content-1 .pay{
+    flex: 1;
+}
+.footer-content-1 .price-box{
+  flex: 2
+}
+.footer-content-1 .check-box icon{
+    margin: 10px 0.5rem 0 1rem;
+}
+.footer-content-1 .check-box .all{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-content-1 .price-box{
+    text-align: right;
+}
+.footer-content-1 .button-jf {
+	width: 100%;
+}
+.df-moreimg{
+    overflow: hidden;
+}
+.df-moreimg image {
+  display: block;
+  margin: 50px auto 20px;
+  width: 141px;
+  height: 73px
+}
+.df-morep {
+    display: block;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  color: #656565
+}

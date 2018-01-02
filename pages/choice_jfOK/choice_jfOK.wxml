@@ -1,0 +1,24 @@
+
+<!--pages/choice_jfOK/choice_jfOK.wxml-->
+<view class="main content">
+  <view class="wrap">
+    <view class="waiting-content">
+      <view class="drop-box">
+        <em><i class="all_bg"></i></em>
+        <span>金杨五街坊1号101户</span> 
+      </view>
+      <view class="msg">
+        <!--<block wx:if="">-->
+            <i class="all_bg icon-tick"></i>
+            <p>您已成功缴纳费用，棒棒哒！</p>
+            <p>持续缴费有助于提升您的个人魅力值哦~~~</p>
+        <!--</block>
+        <block wx:elif="">
+            <i class="all_bg icon-notick"></i>
+            <p>当前没有待缴费账单哦~~~</p>
+            <p>请随时关注"个人中心"进行持续缴费哦~~~~</p>
+        </block>-->
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,221 @@
+/**app.wxss**/
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}*/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #666;
+}
+.clear:after, .clearfix:after {
+	content: ' ';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden
+}
+.all_bg {
+	background: url(https://test99.allinpaymall.com/content/images/all_bg.png) 0 0 no-repeat;
+	display: inline-block;
+	overflow: hidden;
+	background-size: 225px 310px;
+}
+.all_bg_chaobiao2 {
+  background: url('https://test99.allinpaymall.com/content/images/sdm2.png');
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -17px;
+  margin-right: -17px;
+  background-size: 106px 67px;
+  height: 34px;
+  width: 35px;
+}
+page{
+  height: 100%;
+}
+.content{
+  background-color: #eee;
+  height: 100%;
+  padding-top: 1px;
+}
+.add-btm{
+  position: fixed;
+  bottom: 2.5rem;
+  width: 100%;
+  height: 45px;
+  background-color: #3994fc;
+  color: #fff;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+}
+.add-btm.add-btm-fixed{
+  bottom: 0;
+  z-index: 2001;
+}
+.add-btm p{
+  display: block;
+  width: 120px;
+  position: relative;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 0;
+  line-height: 45px;
+}
+.add-btm i{
+  display: block;
+  float: left;
+  width: 17px;
+  height: 17px;
+  background-position: -115px 0;
+  margin: 13px 5px;
+}
+/*下拉框*/
+.drop-box {
+	height: 38px;
+	margin: 12px;
+	background-color: #fff;
+	border-radius: 3px;
+}
+.drop-box em {
+	display: block;
+	float: left;
+	width: 12%;
+	height: 38px;
+	line-height: 36px;
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+.drop-box em i.all_bg {
+	display: block;
+	width: 17px;
+	height: 20px;
+	background-position: -17px top;
+	margin: 9px;
+}
+.drop-box span {
+	display: block;
+	float: left;
+	width: 88%;
+	height: 38px;
+	line-height: 36px;
+	color: #bbb;
+	font-size: 14px;
+	overflow: hidden;
+	overflow-wrap: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ct-gray {
+  position: absolute;
+  background-color: #efeff4;
+  left: 0;
+  right: 0;
+}
+.btn-tj {
+	padding: 0 15px;
+	margin: 20px 0;
+}
+.btn-tj a {
+	font-size: 16px;
+	width: 100%;
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	background: #3a94fd;
+	border-radius: 4px;
+	text-align: center;
+}
+.btn-tj span {
+	font-size: 16px;
+	width: 100%;
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	color: #fff;
+	background: #3a94fd;
+	border-radius: 4px;
+	text-align: center;
+}
+.btn-tj.two span{
+	width:49%;
+}
+.btn-tj span.mr{
+	margin-right: 2%;
+}
+.nodata-img{
+  overflow: hidden;
+}
+.nodata-img image {
+  display: block;
+  margin: 45px auto;
+  width: 112px;
+  height: 118px
+}
+.nodata-p {
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  display: block
+}
+.footer-content-1 {
+  width: 100%;
+  background-color: #fff;
+  height: 44px;
+  line-height: 44px;
+  color: #656565;
+  font-family: 微软雅黑;
+  border-top: 1px solid #ddd
+}
+.footer-content-1 .check-box {
+  float: left
+}
+.footer-content-1 .check {
+  float: left
+}
+.footer-content-1 .price-box {
+  float: right;
+}
+.footer-content-1 .hj {
+  float: right
+}
+.footer-content-1 .Num {
+  float: right;
+  color: #FF5B11;
+  font-size: 17px;
+  margin-right: 10px
+}
+.footer-content-1 .button-jf {
+  height: 44px;
+  float: right;
+  background: #3A95FD;
+  width: 5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 14px
+}
+.zhifu {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #3d96fe;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	z-index: 2000;
+}

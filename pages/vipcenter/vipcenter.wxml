@@ -1,0 +1,30 @@
+
+<!--index.wxml-->
+<view class="container ct-gray">
+  <view class="bg-top">
+    <image src="../../images/vip_banner.png" class="avatar"></image>
+    <text>159****0430</text>
+  </view>
+  <view class="info">
+    <view class="cn pl12">
+      <view class="line-flag"></view>
+      <text class="info-title">我的社区</text>
+    </view>
+    <view class="dt-wp">
+      <navigator url="../jf-order/jf-order">
+        <view class="cn last">我的生活</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="info">
+    <view class="cn pl12">
+      <view class="line-flag"></view>
+      <text class="info-title">我的订单</text>
+    </view>
+    <view class="dt-wp">
+      <navigator url="../jf-order/jf-order">
+        <view class="cn last">党费缴费订单</view>
+      </navigator>
+    </view>
+  </view>
+</view>

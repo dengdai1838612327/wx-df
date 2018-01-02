@@ -1,0 +1,87 @@
+page{
+	background-color:#84DBD7; 
+}
+.bg84dbd7 {
+	min-height: 100%;
+	background: transparent;
+}
+.reg-img image {
+	width: 100%;
+}
+.reg-form{
+	background: transparent;
+}
+.reg-form .ul {
+	width: 85%;
+	margin: 0 auto;
+}
+.reg-form .ul .li {
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.reg-form .ul .li input {
+	height: 95%;
+	padding-left: 5%;
+	border: none;
+	width: 94%;
+	border-radius: 5px;
+}
+.reg-form .ul .li.yzm {
+	position: relative;
+}
+.reg-form .ul .li.yzm button {
+	position: absolute;
+	right: -1px;
+	top: 0;
+	width: 35%;
+	height: 41px;
+	line-height: 41px;
+	background-color: #999;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	color: #fff;
+	border: none;
+	padding: 0;
+	z-index: 20;
+}
+.reg-form .ul .li.btn {
+	background: #999;
+	font-size: 18px;
+	margin-bottom: 45px;
+	border: none;
+}
+.reg-form .ul .li.btn button {
+	width: 100%;
+	height: 40px;
+	line-height: 42px;
+	border: none;
+	color: #fff;
+	background-color: #999;
+}
+.reg-form .ul .li.btn.cur {
+	background-color: #ffb33a;
+	border: none;
+}
+.reg-form .ul .li.yzm.cur button, 
+.reg-form .ul .li.btn.cur button {
+	background-color: #ffb33a;
+}
+.reg-btm {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: -10;
+}
+.reg-btm .reg-bg {
+	background: url(https://test99.allinpaymall.com/content/images/reg-bg.png) 0 0 no-repeat;
+	background-size: 245px 75px;
+	display: block;
+	width: 100%;
+	height: 75px;
+	background-position: right bottom;
+}

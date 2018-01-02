@@ -1,0 +1,28 @@
+/* pages/choice_jfOK/choice_jfOK.wxss */
+.icon-tick {
+	background-position: -174px -150px;
+	display: inline-block;
+	width: 52px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+.icon-notick {
+	background-position: -174px -95px;
+	display: inline-block;
+	width: 52px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+.msg {
+	text-align: center;
+	margin-top: 1rem;
+	line-height: 2.5;
+}
+.msg p {
+    display: block;
+	font-size: 14px;
+	color: #656565;
+	line-height: 25px;
+}

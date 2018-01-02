@@ -1,0 +1,131 @@
+.bggray{
+  background-color: #f2f2f2;
+}
+.banner {
+    width: 100%;
+    margin-bottom: 6px;
+    min-height: 129px;
+}
+.banner image {
+    display: block;
+    height: 100%;
+    line-height: 1;
+    margin: 0 auto;
+    width: 100%;
+}
+.index-category {
+    width: 100%;
+    background: #fff;
+    padding: 10px 0 0;
+    margin-bottom: 6px;
+    position: relative;
+}
+.ul-list {
+    overflow: hidden;
+    text-align: center;
+    font-family: 微软雅黑;
+    padding-bottom: 10px;
+}
+.ul-list li {
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.ul-list li navigator {
+    color: #666;
+    display: block;
+}
+.ul-list li i {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ul-list li image {
+    width: 40px;
+    height: 40px;
+}
+.ul-list li text {
+    display: block;
+}
+.itemlist {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 6px;
+}
+.itemtop {
+    border-bottom: 1px solid #e5e5e5;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.itemtop .h3 {
+    border-left: 6px solid #1888e6;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1.8;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding-left: 8px;
+}
+.iteminfo {
+    padding: 0 0 0 10px;
+}
+.infolist {
+    padding: 10px 10px 10px  0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.n_bd {
+    border-bottom: none;
+}
+.infolist icon.a01 {
+    width: 45px;
+    height: 45px;
+    float: left;
+    position: relative;
+}
+.infolist icon.notice {
+    background-position: right 0;
+}
+.infolist icon.live {
+    background-position: right -47px;
+}
+.infolist icon.a01 i.cur {
+    background: red none repeat scroll 0 0;
+    border-radius: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    z-index: 1;
+}
+.iteminfo dl {
+    width: 82%;
+    float: right;
+    overflow: hidden;
+}
+.iteminfo dl dt {
+    font-size: 14px;
+    margin: 5px 0;
+    width: 95%;
+    overflow: hidden;
+}
+.iteminfo dl text {
+    color: #333;
+    float: left;
+}
+.infolist dl dt .index-date {
+    float: right;
+}
+.iteminfo dl dd {
+    overflow: hidden;
+    overflow-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 95%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+}

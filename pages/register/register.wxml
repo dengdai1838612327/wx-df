@@ -1,0 +1,24 @@
+
+<!--index.wxml-->
+<view class="content bg84dbd7">
+  <view class="reg-img">
+    <image src="../../images/reg-banner.png" mode="aspectFill"></image>
+  </view>
+  <view class="reg-form">
+    <view class="ul">
+      <view class="li num">
+        <input name="mobile" type="text" placeholder="请输入您的手机号" bindblur="mobileInputEvent" />
+      </view>
+      <view class="li yzm cur">
+        <input name="yzm" type="text" placeholder="请输入验证码" bindblur="codeInputEvent" />
+        <button bindtap="getCode" disabled="{{buttonDisable}}">{{getCodeText}}</button>
+      </view>
+      <view class="li btn cur" bindtap="bindLogin">
+        <button>立即登录</button>
+      </view>
+    </view>
+  </view>
+  <view class="reg-btm">
+    <i class="reg-bg"></i>
+  </view>
+</view>

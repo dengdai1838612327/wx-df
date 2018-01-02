@@ -1,0 +1,49 @@
+/* pages/dsorder/dsorder.wxss */
+
+.list-wp {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
+  padding: 15px;
+  background: #fff;
+}
+
+.img {
+  width: 52px;
+  height: 52px;
+}
+
+.label {
+    display:inline-block;
+    width:58px;
+    text-align:right;
+    margin-right:10px;
+}
+
+.text-wp {
+  font-size: 13px;
+  line-height: 1.4;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.last {
+  border-bottom:none;
+}
+.msg i {
+	display: block;
+	width: 52px;
+	height: 50px;
+	margin: 45px auto 10px;
+	background-position: -174px -95px;
+}
+.msg {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2.5
+}
+.msg p {
+  font-size: 14px;
+  color: #656565;
+  line-height: 25px
+}

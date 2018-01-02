@@ -1,0 +1,66 @@
+/* pages/jfdetail/jfdetail.wxss */
+
+.container {
+  font-size: 14px;
+}
+
+.wp {
+  display: flex;
+  line-height: 30px;
+}
+
+.wp text {
+    margin-left:10px;
+}
+
+.item-top {
+  padding: 10px 0 20px 30px;
+  color: #666;
+}
+
+.item-li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.list-wp {
+  background: #fff;
+}
+
+.list-title {
+  padding-left: 8px;
+  padding-top: 7px;
+  line-height: 35px;
+  height: 35px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.list-title .text {
+  margin-left: 5px;
+}
+
+.line-flag {
+  width: 4px;
+  display: inline-block;
+  background: #3a95fd;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.iteminfo {
+  padding: 0 0 0 20px;
+}
+
+.item-li {
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+.item-li:last-child{
+  border: none;
+}

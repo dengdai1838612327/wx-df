@@ -1,0 +1,68 @@
+.address{
+  background-color: #fff;
+  width: 100%;
+  height: 81px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 10px 0 13px 10px;
+  box-sizing: border-box;
+}
+.address .jf-img{
+  float: left;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.address .jf-img image{
+  margin: 6px 2px;
+  width: 50px;
+  height: 43px;
+}
+.address .jf-info{
+  float: left;
+  margin-left: 5%;
+  width: 75%;
+}
+.jf-info .name{
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px dotted #ddd;
+  height: 30px;
+  line-height: 30px;
+  overflow-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333;
+}
+.jf-info .detail{
+    display: block;
+  margin-top: 5px;
+  height: 20px;
+  line-height: 20px;
+  color: #656565;
+  font-size: 14px;
+  overflow: hidden;
+  overflow-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.delete{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+  padding: 12px 0 0 12px;
+  z-index: 100;
+}
+.delete i{
+  display: block;
+  width: 12px;
+  height: 14px;
+  margin-top: 3px;
+  background-position: -38px 0;
+  z-index: 1;
+}

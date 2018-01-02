@@ -1,0 +1,17 @@
+.vp-list .li {
+    background: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 15px 15px 15px 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+.vp-list .li view {
+    margin:0;
+}
+.t-g {
+    color:#a8a8a8;
+}
+.vp-list .li view em.zhangdan{
+    color: rgb(103,226,60);
+}

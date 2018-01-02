@@ -1,0 +1,36 @@
+
+<!--pages/dd-submit/dd-submit.wxml-->
+<view class="main content" style="bottom: 40px;">
+  <view class="drop-box">
+    <em><i class="all_bg"></i></em> 
+    <span>金杨五街坊1号101户</span> 
+  </view>
+  <view class="itemlist">
+    <view class="itemtop">
+      <p>订单详情</p>
+    </view>
+    <view class="iteminfo">
+      <view class="li">
+        <p>2015年6月  车位费  （沪A**666）</p>
+        <span class="fr">￥120.00</span> 
+      </view>
+      <view class="li">
+        <p>2015年6月  车位费  （沪A**666）</p>
+        <span class="fr">￥120.00</span> 
+      </view>
+      <view class="li">
+        <p>2015年6月  车位费  （沪A**666）</p>
+        <span class="fr">￥120.00</span> 
+      </view>
+    </view>
+    <view class="footer-content-1 tijiao">
+      <view class="check-box">
+        <span class="all">订单金额</span> 
+      </view>
+      <view class="price-box">
+        <i class="Num">￥240.00</i>
+      </view>
+    </view>
+  </view>
+  <view class="zhifu">立即支付</view>
+</view>

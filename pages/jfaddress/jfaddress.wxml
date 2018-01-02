@@ -1,0 +1,15 @@
+<view class="main content" style="bottom:45px;">
+  <view>
+    <view class="address">
+      <view class="jf-img">
+        <image src="../../images/jfAddress.png"></image>
+      </view>
+      <dl class="jf-info" bindtap="bindWaiting">
+        <dt class="name">{{party}}</dt>
+        <dd class="detail">
+          <span class="louhao">{{company}}－{{department}}－{{memberName}}</span> 
+        </dd>
+      </dl>
+    </view>
+  </view>
+</view>

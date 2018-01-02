@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/register/register",
+    "pages/jfaddress/jfaddress",
+    "pages/myLife/myLife",
+    "pages/choice_jf/choice_jf",
+    "pages/choice_jfOK/choice_jfOK",
+    "pages/jf-order/jf-order",
+    "pages/dd-submit/dd-submit",
+    "pages/vipcenter/vipcenter",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3a94fd",
+    "navigationBarTitleText": "万家社区",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#3c95fe",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "党员之家",
+      "iconPath":"images/tab1.png",
+      "selectedIconPath":"images/tab1-1.png"
+    },{
+      "pagePath": "pages/vipcenter/vipcenter",
+      "text": "我的",
+      "iconPath":"images/tab2.png",
+      "selectedIconPath":"images/tab2-1.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "离开",
+      "iconPath":"images/tab3.png",
+      "selectedIconPath":"images/tab3-1.png"
+    }]
+  }
+}

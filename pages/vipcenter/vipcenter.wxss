@@ -1,0 +1,58 @@
+/**index.wxss**/
+
+.bg-top {
+  background: url('https://test99.allinpaymall.com/content/images/vip_bg.png');
+  width: 750rpx;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 320px 95px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+}
+
+.line-flag {
+  width: 4px;
+  height: 20px;
+  display: inline-block;
+  background-color: #3a95fd;
+  vertical-align: middle;
+}
+
+.pl12 {
+  padding-left: 12px;
+}
+
+.info {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.info-title {
+  margin-left: 5px;
+}
+
+.dt-wp {
+  margin-left: 26px;
+}
+
+.cn {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dt-wp .cn {
+  color: #656565;
+}
+
+.last {
+  border: none;
+}
