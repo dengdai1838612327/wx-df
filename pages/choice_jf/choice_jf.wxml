@@ -8,8 +8,8 @@
   </view>
   <view class="waiting-content" wx:if="{{BillResult}}.length!==0">
     <view class="mywait-list">
-      <view class="li" wx:for="{{BillResult}}" wx:for-item="i">
-        <icon type="{{isChoose[0]}}" color="#3994fc" bindtap="chooseClick"></icon>
+      <view class="li" wx:for="{{BillResult}}" wx:for-index="idx" wx:for-item="i">
+        <icon type="{{isChoose[idx]}}" data-ischoose="{{isChoose[idx]}}" data-index="{{idx}}" color="#3994fc" bindtap="chooseClick"></icon>
         <view class="text-m">
           <p>{{i.BillName}}</p>
           <p>费用类型:{{i.ChargeItemName}}</p>
@@ -19,7 +19,7 @@
     </view>
     <view class="footer-content-1">
       <view class="check-box">
-        <icon type="{{isChoose[0]}}" color="#3994fc" bindtap="chooseClick"></icon>
+        <icon type="{{isChooseAll}}" data-ischooseall="{{isChooseAll}}" color="#3994fc" bindtap="chooseAllClick"></icon>
         <span class="all">全选</span>
       </view>
       <view class="price-box">
@@ -27,7 +27,7 @@
         <span class="hj">合计：</span>
       </view>
       <view class="pay">
-        <navigator url="../dd-submit/dd-submit" class="button-jf">缴费去咯！</navigator>
+        <view class="button-jf" bindtap='bindSubmit'>缴费去咯！</view>
       </view>
     </view>
   </view>
