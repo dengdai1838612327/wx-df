@@ -29,7 +29,7 @@ Page({
       sub_bill_list[index].OrganSysNo = this.data.BillList[index].OrganSysNo
     }
     this.setData({
-      SubBillList: JSON.stringify(sub_bill_list)
+      SubBillList: sub_bill_list
     })
     var amount_sum = 0
     for (var i = 0; i < this.data.BillList.length; i++) {
@@ -46,12 +46,45 @@ Page({
       data: {
         Method: 'SubmitBill',
         BillAddress: that.data.PartyName + ' ' + that.data.CompanyName + '-' + that.data.PartyMemberName,
-        BillData: that.data.SubBillList
+        BillData: JSON.stringify(that.data.SubBillList)
       },
       method: 'POST',
       success: function (res) {
-        console.log(res.data.Result)
+        if (res.data.status === 'ok') {
+          wx.request({
+            url: 'https://test99.allinpaymall.com/PartyTest/Bill.aspx',
+            data: {
+              Method: 'SubmitH5Order',
+              UserId: '3627',//wx.getStorageSync('UserId')
+              Mobile: '18221670642',//wx.getStorageSync('userMobile')
+              ChannelSysNo: '18',//wx.getStorageSync('ChannelSysNo')
+              BillData: res.data.Result
+            },
+            method: 'POST',
+            success: function (getData) {
+              if (getData.data.status === 'ok') {
+                console.log(getData.data.Result)
+                that.setData({
+                  formData: getData.data.Result
+                })
+                formSubmit()
+              } else {
+                console.log(getData.data)
+              }
+            }
+          })
+        } else {
+          console.log(res.data.message)
+        }
       }
+    })
+  },
+  formSubmit: function () {
+    wx.request({
+      url: 'http://test.allinpay.com/h5pay/index.do',
+      data: {},
+      method: 'POST',
+      success: function (res) { }
     })
   }
 })

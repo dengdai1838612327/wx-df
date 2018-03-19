@@ -6,7 +6,7 @@
     </em>
     <span>{{PartyName}}-{{CompanyName}}-{{PartyMemberName}}</span>
   </view>
-  <view class="waiting-content" wx:if="{{BillResult}}.length!==0">
+  <view class="waiting-content" wx:if="{{BillResult.length!==0}}">
     <view class="mywait-list">
       <view class="li" wx:for="{{BillResult}}" wx:for-index="idx" wx:for-item="i">
         <icon type="{{isChoose[idx]}}" data-ischoose="{{isChoose[idx]}}" data-index="{{idx}}" color="#3994fc" bindtap="chooseClick"></icon>

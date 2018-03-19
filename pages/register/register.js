@@ -9,7 +9,7 @@ Page({
     buttonDisable: false,
     myOpenid: ''
   },
-  onLoad:function(){
+  onLoad: function () {
     wx.clearStorageSync();
   },
   mobileInputEvent: function (e) {
@@ -87,47 +87,52 @@ Page({
           if (code) {
             //发起网络请求
             wx.request({
-              url: 'https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code',
+              url: 'https://test99.allinpaymall.com/PartyTest/Weixin.aspx',
               data: {
-                appid: 'wx8c4aa0faad855a59',
-                secret: 'dda246f57d1d45547189c6408ea08abd',
-                js_code: code,
-                grant_type: 'authorization_code'
+                Method: 'GetOpenid',
+                Code: code,
+                WXPublicId: 'wxd23dfbc1b2bed503'
               },
+              method: 'POST',
               success: function (getData) {
-                that.setData({
-                  myOpenid: getData.data.openid
-                });
-                wx.request({
-                  url: 'https://test99.allinpaymall.com/PartyTest/Home.aspx',
-                  data: {
-                    Method: 'Register',
-                    Mobile: that.data.mobile,
-                    openid: that.data.myOpenid,
-                    WXPublicId: 'wx8c4aa0faad855a59'
-                  },
-                  method: 'POST',
-                  success: function (res) {
-                    console.log(res);
-                    if (res.data.status === 'ok') {
-                      wx.setStorageSync('userMobile',that.data.mobile);
-                      wx.setStorageSync('UserId', JSON.parse(res.data.Result).UserId);
-                      wx.switchTab({
-                        url: '../index/index'
-                      })
-                    } else {
-                      wx.showModal({
-                        title: '提示',
-                        content: res.data.message,
-                        showCancel: false,
-                        confirmColor: '#3c95fe'
-                      })
+                if (getData.data.status === 'ok') {
+                  that.setData({
+                    myOpenid: JSON.parse(getData.data.Result).openid
+                  });
+                  wx.request({
+                    url: 'https://test99.allinpaymall.com/PartyTest/Home.aspx',
+                    data: {
+                      Method: 'Register',
+                      Mobile: that.data.mobile,
+                      openid: that.data.myOpenid,
+                      WXPublicId: 'wxd23dfbc1b2bed503'
+                    },
+                    method: 'POST',
+                    success: function (res) {
+                      if (res.data.status === 'ok') {
+                        wx.setStorageSync('userMobile', that.data.mobile);
+                        wx.setStorageSync('UserId', JSON.parse(res.data.Result).UserId);
+                        wx.setStorageSync('ChannelSysNo', JSON.parse(res.data.Result).ChannelSysNo)
+                        wx.switchTab({
+                          url: '../index/index'
+                        })
+                      } else {
+                        wx.showModal({
+                          title: '提示',
+                          content: res.data.message,
+                          showCancel: false,
+                          confirmColor: '#3c95fe'
+                        })
+                      }
+                    },
+                    fail: function (res) {
+                      alert('发生意外错误！')
                     }
-                  },
-                  fail: function (res) {
-                    alert('发生意外错误！')
-                  }
-                })
+                  })
+                }
+                else {
+                  console.log(getData.data)
+                }
               }
             })
           } else {

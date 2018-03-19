@@ -25,4 +25,5 @@
     </view>
   </view>
   <view class="zhifu" bindtap='submitBill'>立即支付</view>
+  <form bindsubmit="formSubmit">{{formData}}</form>
 </view>

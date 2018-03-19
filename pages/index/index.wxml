@@ -2,23 +2,27 @@
   <swiper indicator-dots="true" autoplay="true">
     <block wx:for="{{imgUrls}}">
       <swiper-item class="banner">
-        <image mode='scaleToFill' src="{{item.img_url}}" class="slide-image"/>
+        <image mode='scaleToFill' src="{{item.img_url}}" class="slide-image" />
       </swiper-item>
     </block>
   </swiper>
   <view class="index-category">
     <ul class="ul-list ul-list-50">
-      <li> 
-        <navigator url="../jfaddress/jfaddress"> 
-          <i><image src="../../images/5.png"></image></i> 
-          <text>党费缴纳</text> 
-        </navigator> 
+      <li>
+        <navigator url="../jfaddress/jfaddress">
+          <i>
+            <image src="../../images/5.png"></image>
+          </i>
+          <text>党费缴纳</text>
+        </navigator>
       </li>
-      <li> 
-        <navigator url=""> 
-          <i><image src="../../images/8.png"></image></i> 
-          <text>党员生活</text> 
-        </navigator> 
+      <li>
+        <navigator url="">
+          <i>
+            <image src="../../images/8.png"></image>
+          </i>
+          <text>党员生活</text>
+        </navigator>
       </li>
     </ul>
   </view>
@@ -27,8 +31,10 @@
       <text class='h3'>信息速递</text>
     </view>
     <view class="iteminfo">
-      <view class="infolist clearfix"> 
-        <icon class="all_bg notice a01"></icon>
+      <view class="infolist clearfix">
+        <icon class="all_bg notice a01">
+          <i class="cur" wx:if="{{is_read}} === 0"></i>
+        </icon>
         <dl>
           <dt>
             <text>小区通知</text>
@@ -37,8 +43,10 @@
           <dd>【停水通知】接物业通知，本小区将于25号停水</dd>
         </dl>
       </view>
-      <view class="infolist clearfix n_bd"> 
-        <icon class="all_bg live a01"> <i class="cur"></i> </icon>
+      <view class="infolist clearfix n_bd" bindtap='getAllLife'>
+        <icon class="all_bg live a01">
+          <i class="cur" wx:if="{{is_read}} === 0"></i>
+        </icon>
         <dl>
           <dt>
             <text>我的生活</text>

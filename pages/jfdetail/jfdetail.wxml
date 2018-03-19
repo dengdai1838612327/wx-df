@@ -1,48 +1,39 @@
-
 <!--pages/jfdetail/jfdetail.wxml-->
 <view class="container ct-gray">
   <view class="item-top">
     <view class="wp">
-      <view class="label">订单编号:</view> 
-      <text>201506061212</text> 
+      <view class="label">订单编号:</view>
+      <text>{{order_id}}</text>
     </view>
     <view class="wp">
-      <view class="label">订单金额:</view> 
-      <text>¥360.00</text> 
+      <view class="label">订单金额:</view>
+      <text>¥{{order_amount}}</text>
     </view>
     <view class="wp">
-      <view class="label">订单状态:</view> 
-      <text>支付成功</text> 
+      <view class="label">订单状态:</view>
+      <text>{{order_status}}</text>
     </view>
     <view class="wp">
-      <view class="label">缴费地址:</view> 
-      <text>金杨五街坊-1号-101户</text> 
+      <view class="label">缴费地址:</view>
+      <text>{{order_address}}</text>
     </view>
     <view class="wp">
-      <view class="label">创建时间:</view> 
-      <text>16-06-30 12:50:22</text> 
+      <view class="label">创建时间:</view>
+      <text>{{creat_time}}</text>
     </view>
   </view>
   <view class="itemlist">
     <view class="list-wp">
-        <view class="list-title">
-           <view class="line-flag"></view>
-           <text class="text">订单明细</text>
+      <view class="list-title">
+        <view class="line-flag"></view>
+        <text class="text">订单明细</text>
+      </view>
+      <view class="iteminfo">
+        <view class="item-li" wx:for='{{order_items}}'>
+          <view class="left">{{item.BillName}}</view>
+          <view class="right">￥{{item.BillAmount}}</view>
         </view>
-        <view class="iteminfo">
-            <view class="item-li">
-                <view class="left">2015年年6月 物业费</view>
-                <view class="right">￥120.00</view>
-            </view>
-            <view class="item-li">
-                <view class="left">2015年年6月 物业费</view>
-                <view class="right">￥120.00</view>
-            </view>
-            <view class="item-li">
-                <view class="left">2015年年6月 物业费</view>
-                <view class="right">￥120.00</view>
-            </view>
-        </view>
+      </view>
     </view>
   </view>
 </view>

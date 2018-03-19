@@ -1,26 +1,8 @@
 <view class="vp-list">
-  <view class='li'>
-    <view class="t-g">16-10-01 16:36:36</view>
+  <view class='li' wx:for='{{msg_list}}'>
+    <view class="t-g">{{item.CreatTime}}</view>
     <view>
-      <em class="zhangdan">【账单】</em>你有待缴物业费账单啦！快快清空账单啦~
-    </view>
-  </view>
-  <view class='li'>
-    <view class="t-g">16-10-01 16:36:36</view>
-    <view>
-      <em class="zhangdan">【账单】</em>你有待缴物业费账单啦！快快清空账单啦~
-    </view>
-  </view>
-  <view class='li'>
-    <view class="t-g">16-10-01 16:36:36</view>
-    <view>
-      <em class="zhangdan">【账单】</em>你有待缴物业费账单啦！快快清空账单啦~
-    </view>
-  </view>
-  <view class='li'>
-    <view class="t-g">16-10-01 16:36:36</view>
-    <view>
-      <em class="zhangdan">【账单】</em>你有待缴物业费账单啦！快快清空账单啦~
+      <em class="zhangdan">【账单】</em>{{item.Content}}
     </view>
   </view>
 </view>

@@ -1,9 +1,8 @@
-
 <!--index.wxml-->
 <view class="container ct-gray">
   <view class="bg-top">
     <image src="../../images/vip_banner.png" class="avatar"></image>
-    <text>159****0430</text>
+    <text>{{user_mobile}}</text>
   </view>
   <view class="info">
     <view class="cn pl12">
@@ -11,7 +10,7 @@
       <text class="info-title">我的社区</text>
     </view>
     <view class="dt-wp">
-      <navigator url="../jf-order/jf-order">
+      <navigator url="../myLife/myLife">
         <view class="cn last">我的生活</view>
       </navigator>
     </view>
